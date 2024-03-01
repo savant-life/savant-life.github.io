@@ -10,11 +10,11 @@ function log() {
     var user = document.getElementById("user").value;
     var pass = document.getElementById("pass").value;
 
-    localStorage.setItem("DomoUser", user);
-    localStorage.setItem("DomoPass", pass);
-
     user = user.toUpperCase();
     pass = pass.toUpperCase();
+
+    localStorage.setItem("DomoUser", user);
+    localStorage.setItem("DomoPass", pass);
 
     if (user == Users[0] && pass == Pass) {window.location.href = "/Usuarios/1.html";}
     else if (user == Users[1] && pass == Pass) {window.location.href = "/Usuarios/2.html";}
