@@ -1,6 +1,5 @@
 function LogOut() {
-  localStorage.removeItem("DomoUser");
-  localStorage.removeItem("DomoPass");
+  localStorage.clear();
   window.location.href = "../index.html";
 }
 
